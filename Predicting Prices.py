@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Feb  9 18:19:53 2021
-
-@author: n1a9m
-"""
 
 
 import numpy as np
@@ -37,7 +31,7 @@ from hyperopt import STATUS_OK, Trials, fmin, hp, tpe, space_eval
 import warnings
 warnings.filterwarnings("ignore")
 
-df=pd.read_csv("C:\\Users\\n1a9m\\OneDrive\\Desktop\\JOB\\Glow Road\\vehicles.csv")
+df=pd.read_csv("vehicles.csv")
 valid_part = 0.3
 
 drop_columns = ['Unnamed: 0', 'id', 'url', 'region', 'region_url', 'model', 'title_status', 'VIN', 'size', 
